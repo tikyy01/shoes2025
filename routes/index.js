@@ -19,7 +19,7 @@ router.get('/jordan1', function(req, res, next) {
 /* Страница Air Force 1 low */
 router.get('/airforce', function(req, res, next) {
     res.render('shoeses', {
-        title: " Air Force 1 low",
+        title: "Air Force 1 low",
         picture: "images/airforce.jpg",
         desc: "Легендарные кроссовки 1982 года. Первые Nike с технологией Air. Белая расцветка White on White стала иконой уличного стиля и хип-хоп культуры."
     });
@@ -30,7 +30,7 @@ router.get('/airforce', function(req, res, next) {
 /* Страница Air Force 1 Off White */
 router.get('/offwhite', function(req, res, next) {
     res.render('shoeses', {
-        title: " Air Force 1 Off White",
+        title: "Air Force 1 Off White",
         picture: "images/offwhite.jpg",
         desc: "Коллаборация Nike и Вирджила Абло. Деконструкция, фирменные кавычки, яркие бирки. Икона уличной моды и коллекционная ценность."
     });
