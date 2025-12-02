@@ -1,11 +1,15 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+    res.send('Новый маршрутизатор, для маршрутов, начинающихся с shoes');
 });
 
+/* Страница кроссовок */
+router.get("/:nick", function(req, res, next) {
+    res.send(req.params.nick);
+});
 
 /* Страница Jordan 1 low Travis Scott */
 router.get('/jordan1', function(req, res, next) {
