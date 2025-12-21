@@ -15,16 +15,17 @@
        </button>
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-           <li class="nav-item">
-             <a class="nav-link" href="/shoes/jordan1">Jordan 1 low Travis Scott</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="/shoes/airforce">Air Force 1 low</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="/shoes/offwhite">Air Force 1 Off White</a>
-           </li>
-         </ul>
+              <% if(typeof nav == 'object' && nav){
+                  nav.forEach(function(item){
+               %>
+            <li class="nav-item">
+              <a  class="nav-link" href="/shoes/<%= item.nick %>"><%= item.title %></a>
+            </li>
+               <%
+                 })}
+               %>
+          </ul>
+
        </div>
      </div>
    </nav>
