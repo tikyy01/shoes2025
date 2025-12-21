@@ -8,7 +8,7 @@ var Shoes = require('./models/shoes.js').Shoes
 
 var shoes = new Shoes({
    title: "Jordan 1 low Travis Scott",
-   nick: "Jordan 1",
+   nick: "jordan1",
 
 })
 

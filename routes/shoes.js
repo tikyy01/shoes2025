@@ -13,7 +13,7 @@ router.get("/:nick", async function(req, res, next) {
    console.log(shoeses)
    if(!shoeses.length) return next(new Error("Нет такого кроссовка в нашем магазине"))
        var shoes = shoeses[0];
-       res.render('shoes', {
+       res.render('shoeses', {
            title: shoes.title,
            picture: shoes.avatar,
            desc: shoes.desc
